@@ -1,0 +1,26 @@
+.main-btn {
+  background-color: #627fd5;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  user-select: none;
+  height: 60px;
+  border-radius: 3px;
+  padding: 20px 12px;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  &:hover {
+    background-color: #4292fa;
+    color: #fff;
+  }
+}

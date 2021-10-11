@@ -4,10 +4,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "start": "node ./main.js"
   },
   "devDependencies": {
     "sass": "^1.42.1",
     "vite": "^2.5.4"
   }
+ 
 }
