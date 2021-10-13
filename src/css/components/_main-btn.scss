@@ -7,8 +7,6 @@
   background-image: none;
   border: 1px solid transparent;
   white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
   line-height: 1.42857;
   user-select: none;
   height: 60px;
@@ -19,6 +17,7 @@
   font-weight: 700;
   color: #fff;
   width: 100%;
+
   &:hover {
     background-color: #4292fa;
     color: #fff;

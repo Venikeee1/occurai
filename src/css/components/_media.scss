@@ -2,19 +2,23 @@
   .send-email {
     width: 300px;
   }
+
   .main-btn__main {
     display: block;
     margin: 0 auto;
     width: 300px;
   }
 }
+
 @media (min-width: 768px) {
   .container {
     width: 768px;
   }
+
   .cases {
     padding: 100px 0;
   }
+
   .cases-box-container {
     width: 100%;
     margin: 0 auto;
@@ -23,12 +27,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .case-box {
     width: 48%;
     height: 350px;
     margin: 0;
     margin-bottom: 30px;
   }
+
   .benefits-box {
     padding: 80px 75px 25px;
   }
@@ -59,12 +65,15 @@
   .heading-text {
     font-size: 4.6em;
   }
+
   .main-btn__main {
     width: 190px;
   }
+
   .main-img {
     height: 391px;
   }
+
   .cases {
     padding: 100px 0 140px;
   }
@@ -72,14 +81,17 @@
   .benefits-box {
     padding: 80px 117px 25px;
   }
+
   .get-updates {
     padding-bottom: 140px;
   }
 }
+
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
   }
+
   .main-img-container {
     margin: 0;
   }

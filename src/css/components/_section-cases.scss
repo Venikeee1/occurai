@@ -4,24 +4,27 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 0px 0px 11px #0000001c;
+  box-shadow: 0 0 11px #0000001c;
   margin-right: auto;
   margin-left: auto;
   width: 100%;
   padding: 40px 0;
 }
+
 .cases-heading-text {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   color: #49a3ff;
   font-weight: 300;
   margin: 20px 0 30px;
   font-size: 3.2em;
   text-align: center;
 }
+
 .cases-box-container {
   margin: 18px;
   display: block;
 }
+
 .case-box {
   display: block;
   margin: 0 auto;
@@ -34,8 +37,9 @@
   overflow: hidden;
   z-index: 1;
 }
+
 .case-text {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Roboto Mono', monospace;
   color: #6881a9;
   font-size: 1.6em;
   font-weight: 500;
@@ -44,6 +48,7 @@
   margin-top: 30px;
   margin-bottom: 40px;
 }
+
 .case-img {
   margin: 0 auto;
   margin-top: 76px;

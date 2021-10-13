@@ -1,6 +1,6 @@
 .main-page {
   display: block;
-  background: radial-gradient(
+  background-color: radial-gradient(
     circle at 104%,
     #5bccde,
     #58bdcc 30%,
@@ -12,6 +12,7 @@
   width: 100%;
   overflow: hidden;
 }
+
 .heading-text {
   text-align: left;
   letter-spacing: -2px;
@@ -22,11 +23,13 @@
   font-weight: 500;
   margin: 20px 0;
 }
+
 .page-form {
   padding: 15px;
   margin-left: 7.5px;
   margin-right: 7.5px;
 }
+
 .send-email {
   display: block;
   margin: 0 auto;
@@ -44,12 +47,15 @@
   box-shadow: none;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
+
 .main-btn__main {
   margin: 20px 0 0;
 }
+
 .main-img-container {
   margin-top: 70px;
 }
+
 .main-img {
   margin: 0 auto;
   max-width: 100%;

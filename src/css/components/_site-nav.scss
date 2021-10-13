@@ -1,11 +1,13 @@
 .navbar-header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   transition: all 0.2s ease-in-out;
-  margin: -95px -15px -15px -15px;
   display: flex;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 2;
+  margin: 0 auto;
 }
 
 .navbar-brand {
@@ -15,11 +17,8 @@
   padding: 15px;
   font-size: 18px;
   line-height: 20px;
-
-  padding: 15px;
-  font-size: 18px;
-  line-height: 20px;
 }
+
 .navbar-toggle {
   position: relative;
   margin-right: 15px;
@@ -31,6 +30,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
 }
+
 .toggle-bar {
   background-color: #fff;
   display: block;
@@ -39,8 +39,10 @@
   border-radius: 1px;
   margin-top: 4px;
 }
+
 .collapsing-menu {
   display: none;
+
   &a {
     text-decoration: none;
   }
