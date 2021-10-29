@@ -99,8 +99,11 @@
   }
 
   .benefits-text {
-    margin-left: -140px;
+    margin-left: -40px;
     flex-grow: 3;
+  }
+  .benefits-text__3 {
+    margin-left: -400px;
   }
 
   .get-updates {
@@ -125,4 +128,12 @@
     width: 50%;
     margin: 0 0 60px;
   }
+  .benefits-text {
+    margin-left: -140px;
+  }
+
+  .benefits-text__3 {
+    margin-left: -500px;
+  }
+
 }
