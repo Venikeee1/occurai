@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@frsource/vite-plugin-stylelint": "0.0.7",
+    "gsap": "^3.8.0",
     "stylelint-config-standard": "^22.0.0",
     "vite-plugin-stylelint": "^1.0.1"
   }

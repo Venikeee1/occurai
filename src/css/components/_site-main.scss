@@ -1,16 +1,26 @@
 .main-page {
-  display: block;
-  background: radial-gradient(
-    circle at 104%,
-    #5bccde,
-    #58bdcc 30%,
-    #66b5c1 65%,
-    #5aa5b1 75%
-  );
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  background: $introGradient;
   padding-top: 100px;
   padding-bottom: 40px;
   width: 100%;
   overflow: hidden;
+}
+
+.mp-container {
+  @include tabletLarge {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    div {
+      align-self: center;
+      width: 50%;
+    }
+  }
 }
 
 .heading-text {
@@ -22,12 +32,26 @@
   color: #fff;
   font-weight: 500;
   margin: 20px 0;
+
+  @include tabletLarge {
+    font-size: 4.6em;
+  }
 }
 
 .page-form {
   padding: 15px;
   margin-left: 7.5px;
   margin-right: 7.5px;
+
+  @include tabletLarge {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    div {
+      align-self: center;
+    }
+  }
 }
 
 .send-email {
@@ -46,18 +70,40 @@
   border: solid 1px #97b2e8;
   box-shadow: none;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  @include mobile {
+    max-width: 300px;
+  }
 }
 
 .main-btn__main {
   margin: 20px 0 0;
+
+  @include mobile {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+
+  @include tabletLarge {
+    max-width: 190px;
+  }
 }
 
 .main-img-container {
   margin-top: 70px;
+
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .main-img {
   margin: 0 auto;
   max-width: 100%;
   height: 220px;
+
+  @include tabletLarge {
+    height: 391px;
+  }
 }

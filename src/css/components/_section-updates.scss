@@ -6,6 +6,10 @@
   box-shadow: 0 0 11px #0000001c;
   padding-top: 160px;
   padding-bottom: 100px;
+
+  @include tabletLarge {
+    padding-bottom: 140px;
+  }
 }
 
 .main-btn__updates {

@@ -25,4 +25,17 @@ img {
 .container {
   padding: 15px;
   margin: 0 auto;
+  width: 100%;
+
+  @include tablet {
+    max-width: 768px;
+  }
+
+  @include tabletLarge {
+    max-width: 990px;
+  }
+
+  @include desktop {
+    max-width: 1200px;
+  }
 }

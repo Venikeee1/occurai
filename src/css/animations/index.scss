@@ -1,0 +1,10 @@
+.animated-character {
+  display: inline-flex;
+  overflow: hidden;
+  transform: rotate(16deg);
+}
+
+.animated-character-content {
+  display: inline-flex;
+  transform: translateY(100%);
+}

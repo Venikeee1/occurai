@@ -32,6 +32,17 @@
   background: #fff;
   margin-bottom: 40px;
   padding: 60px 37.5px 25px;
+
+  @include tablet {
+    padding: 80px 75px 25px;
+  }
+
+  @include tabletLarge {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+  }
 }
 
 .benefits-text {
@@ -40,6 +51,11 @@
   font-weight: 500;
   line-height: 24px;
   text-align: left;
+  flex-grow: 1;
+
+  @include tabletLarge {
+    order: 1;
+  }
 }
 
 .benefits-header {
@@ -55,8 +71,18 @@
   margin: 20px 0;
 }
 
-.benefits-img {
+.img-box {
   max-width: 60%;
   margin-top: 20px;
   margin-bottom: 14px;
+  flex-shrink: 0;
+
+  @include tabletLarge {
+    width: 35%;
+    margin: 0 65px 0 0;
+  }
+}
+
+.benefits-img {
+  width: 100%;
 }

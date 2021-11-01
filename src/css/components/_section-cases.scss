@@ -9,6 +9,14 @@
   margin-left: auto;
   width: 100%;
   padding: 40px 0;
+
+  @include mobile {
+    padding: 100px 0;
+  }
+
+  @include tabletLarge {
+    padding: 100px 0 140px;
+  }
 }
 
 .cases-heading-text {
@@ -23,19 +31,41 @@
 .cases-box-container {
   margin: 18px;
   display: block;
+
+  @include tablet {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  @include desktop {
+    justify-content: space-around;
+  }
 }
 
 .case-box {
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 20px;
+  padding-bottom: 25px;
   max-width: 480px;
-  height: 350px;
   border-radius: 5px;
   background: #fff;
   box-shadow: 0 5px 50px rgba(232, 244, 255, 0.5);
   cursor: pointer;
   overflow: hidden;
   z-index: 1;
+
+  @include tablet {
+    width: 48%;
+    margin: 0 0 30px;
+  }
+
+  @include desktop {
+    width: 50%;
+    margin: 0 0 60px;
+  }
 }
 
 .case-text {
@@ -51,8 +81,12 @@
 
 .case-img {
   margin: 0 auto;
-  margin-top: 76px;
+  margin-top: 46px;
   max-height: 360px;
-  width: 654px;
-  height: 200px !important;
+  max-width: 300px;
+  width: 70%;
+
+  @include tablet {
+    margin-top: 76px;
+  }
 }
