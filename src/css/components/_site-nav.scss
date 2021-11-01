@@ -3,9 +3,9 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
   width: 100%;
   transition: all 0.2s ease-in-out;
-  z-index: 2;
   margin: 0 auto;
 
   &.sticky {
@@ -60,6 +60,7 @@
   transform: translateX(-100%);
   transition: transform 0.3s;
   opacity: 0;
+  z-index: 10;
 
   &.is-open {
     opacity: 1;
