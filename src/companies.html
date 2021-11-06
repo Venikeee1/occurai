@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="navbar-header">
+        <div class="container navbar-header-container">
+          <a href="/" class="navbar-brand"> Occur </a>
+          <button class="navbar-toggle">
+            <span class="toggle-visual">
+              <span class="toggle-bar"></span>
+              <span class="toggle-bar"></span>
+              <span class="toggle-bar"></span>
+            </span>
+          </button>
+        </div>
+      </header>
+      <div class="collapsing-menu">
+        <div class="collapsing-menu__list">
+          <a href="#" class="collapsing-menu__link">For Candidates</a>
+          <a href="#" class="collapsing-menu__link">For Companies</a>
+        </div>
+      </div>
+      <section class="main-page">
+        <div class="mp-container container">
+          <div class="main-left">
+            <h2 class="heading-text">
+              Find the most suitable position available
+            </h2>
+            <section class="main-send-email">
+              <form action="" class="page-form">
+                <div class="form-fields">
+                  <input
+                    class="send-email"
+                    type="text"
+                    name="name"
+                    placeholder="John Doe"
+                  />
+                  <input
+                    class="send-email"
+                    type="email"
+                    placeholder="john@doe.com"
+                    name="user_email"
+                    required
+                  />
+                </div>
+                <div class="main-btn-container">
+                  <button class="main-btn main-btn__main" type="submit">
+                    Get updates
+                  </button>
+                </div>
+              </form>
+            </section>
+          </div>
+
+          <div class="main-img-container">
+            <img class="main-img" src="img/main2.svg" alt="exchanges" />
+          </div>
+        </div>
+      </section>
+
+      <section class="cases">
+        <div class="container">
+          <div class="cases-heading">
+            <h3 class="cases-heading-text">How to use</h3>
+          </div>
+
+          <div class="cases-box-container">
+            <div class="case-box">
+              <h4 class="case-text">
+                upload resume and describe your interests
+              </h4>
+              <img src="img/step1freelancer.svg" alt="" class="case-img" />
+            </div>
+            <div class="case-box">
+              <h4 class="case-text">let us evaluate your experience</h4>
+              <img src="img/step2freelancer.svg" alt="" class="case-img" />
+            </div>
+            <div class="case-box">
+              <h4 class="case-text">we will suggest you open positions</h4>
+              <img src="img/step3freelancer.svg" alt="" class="case-img" />
+            </div>
+            <div class="case-box">
+              <h4 class="case-text">start your new adventure</h4>
+              <img src="img/step4freelancer.svg" alt="" class="case-img" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits-heading">
+            <h3 class="benefits-heading-text">Why to use</h3>
+          </div>
+
+          <div class="benefits-box-container">
+            <div class="benefits-box">
+              <div class="benefits-text">
+                <h4 class="benefits-header">Saving time for companies</h4>
+                <p class="benefits-description">
+                  We provide up to 5 best matching candidates for the job based
+                  on the company info, salary, location and other settings.
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="img/ben1.svg" alt="" class="benefits-img" />
+              </div>
+            </div>
+            <div class="benefits-box">
+              <div class="benefits-text">
+                <h4 class="benefits-header">Saving time for candidates</h4>
+                <p class="benefits-description">
+                  We work both sides similarly providing up to 5 best matching
+                  positions based on your interests, resume, location etc.
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="img/ben2.svg" alt="" class="benefits-img" />
+              </div>
+            </div>
+            <div class="benefits-box">
+              <div class="benefits-text benefits-text__3">
+                <h4 class="benefits-header">Pricing</h4>
+                <p class="benefits-description">
+                  We charge 100% candidate's monthly salary.
+                </p>
+              </div>
+              <div class="img-box">
+                <img src="img/ben3.svg" alt="" class="benefits-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="get-updates">
+        <div class="container">
+          <form action="" class="page-form page-form-updates">
+            <div class="form-fields">
+              <input
+                class="send-email"
+                type="text"
+                name="name"
+                placeholder="github"
+              />
+              <input
+                class="send-email"
+                type="email"
+                placeholder="email/telegram/linkedin"
+                name="user_email"
+                required
+              />
+            </div>
+            <div class="main-btn-container">
+              <button class="main-btn main-btn__updates" type="submit">
+                Get updates
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <footer class="page-footer">
+        <div class="container">
+          <div class="contact-linkedin">
+            <a href="/">Occur</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
