@@ -39,6 +39,10 @@
   border: 1px solid transparent;
   border-radius: 4px;
   cursor: pointer;
+
+  @include tabletLarge {
+    display: none;
+  }
 }
 
 .toggle-bar {
@@ -67,13 +71,19 @@
     display: block;
     transform: translateX(0);
   }
+
+  @include tabletLarge {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+  }
 }
 
 .collapsing-menu__link {
   display: block;
   width: 100%;
   padding: 10px;
-  color: #333333;
+  color: #333;
   font-size: 24px;
   text-decoration: none;
   margin-bottom: 30px;
@@ -85,5 +95,9 @@
 
   @include tablet {
     font-size: 36px;
+  }
+
+  @include tabletLarge {
+    font-size: 18px;
   }
 }

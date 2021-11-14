@@ -34,7 +34,8 @@ const createSplittedText = (words) => {
 
 const animateLetters = (selector) => {
   const introText = document.querySelector(selector);
-  const words = splitByWords(introText.textContent);
+  const text = introText.textContent;
+  const words = splitByWords(text);
   const characterLayout = createSplittedText(words);
 
   introText.innerHTML = characterLayout;
