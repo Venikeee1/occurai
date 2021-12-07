@@ -6,8 +6,8 @@
     "build": "vite build",
     "serve": "vite preview",
     "start": "node ./main.js",
-    "predeploy": "npm run build",
-    "deploy:gh": "cross-env NODE_ENV=deployGh && gh-pages -d src/dist"
+    "predeploy": "cross-env BASE_ENV=deployGh npm run build",
+    "deploy:gh": "gh-pages -d src/dist"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3",

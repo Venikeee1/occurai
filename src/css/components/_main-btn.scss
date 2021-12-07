@@ -17,7 +17,7 @@
   font-weight: 700;
   color: #fff;
   width: 100%;
-  transition: 1s ease-out;
+  transition: color 1s ease-out, background-color 1s ease-out;
 
   &:hover {
     background-color: #4292fa;

@@ -64,6 +64,7 @@ const animateForm = () => {
     opacity: 0,
     rotate: '8deg',
     transformOrigin: '0 0',
+    duration: 0,
   });
 
   gsap.to(
