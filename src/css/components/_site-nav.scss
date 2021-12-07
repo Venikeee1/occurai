@@ -7,10 +7,15 @@
   width: 100%;
   transition: all 0.2s ease-in-out;
   margin: 0 auto;
+  padding: 10px 0;
 
   &.sticky {
     background: $introGradient;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  @include tabletLarge {
+    padding: 25px 0;
   }
 }
 
@@ -30,7 +35,6 @@
 
 .navbar-toggle {
   position: relative;
-  margin-right: 15px;
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
@@ -41,6 +45,7 @@
   cursor: pointer;
 
   @include tabletLarge {
+    margin-right: 15px;
     display: none;
   }
 }
@@ -59,12 +64,15 @@
   top: 0;
   left: 0;
   height: 100%;
+  width: 100%;
   background: #fff;
   padding: 100px 50px 50px;
   transform: translateX(-100%);
-  transition: transform 0.3s;
+  transition: transform 0.3s, opacity 0.5s;
   opacity: 0;
-  z-index: 10;
+  z-index: 1000;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  text-align: center;
 
   &.is-open {
     opacity: 1;
@@ -72,8 +80,12 @@
     transform: translateX(0);
   }
 
+  @include mobile {
+    max-width: 450px;
+  }
+
   @include tabletLarge {
-    display: flex;
+    display: none !important;
     justify-content: space-between;
     background: #fff;
   }
@@ -99,5 +111,62 @@
 
   @include tabletLarge {
     font-size: 18px;
+  }
+}
+
+.nav-links {
+  display: none;
+
+  @include tabletLarge {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  color: $light;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    transition: transform 0.3s;
+    transform: scaleX(0);
+    background: $light;
+  }
+
+  &:hover {
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.collapsing-menu-close {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  outline: none;
+
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: $dark;
+    stroke-width: 1px;
+    stroke: $dark;
+    pointer-events: none;
   }
 }

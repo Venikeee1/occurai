@@ -1,6 +1,5 @@
 .main-btn {
   text-decoration: none;
-  background-color: #627fd5;
   text-align: center;
   vertical-align: middle;
   touch-action: manipulation;
@@ -23,5 +22,13 @@
   &:hover {
     background-color: #4292fa;
     color: #fff;
+  }
+
+  &--blue {
+    background-color: #627fd5;
+  }
+
+  &--light-blue {
+    background-color: #44b9ff;
   }
 }

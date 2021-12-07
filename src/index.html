@@ -15,52 +15,22 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="navbar-header">
-        <div class="container navbar-header-container">
-          <a href="/" class="navbar-brand"> Occur </a>
-          <button class="navbar-toggle">
-            <span class="toggle-visual">
-              <span class="toggle-bar"></span>
-              <span class="toggle-bar"></span>
-              <span class="toggle-bar"></span>
-            </span>
-          </button>
-        </div>
-      </header>
-      <div class="collapsing-menu">
-        <div class="collapsing-menu__list">
-          <a href="#" class="collapsing-menu__link">For Candidates</a>
-          <a href="#" class="collapsing-menu__link">For Companies</a>
-        </div>
-      </div>
-      <section class="main-page">
+      {{> header }}
+      <!-- Mobile menu -->
+      {{> mobileMenu }}
+
+      <section class="main-page main-page--home">
         <div class="mp-container container">
           <div class="main-left">
             <h2 class="heading-text">
               Find the most suitable position available
             </h2>
-            <section class="main-send-email">
-              <form action="" class="page-form">
-                <div class="form-fields">
-                  <!--<input
-                    class="send-email"
-                    type="text"
-                    name="name"
-                    placeholder="John Doe"
-                  />
-                  <input
-                    class="send-email"
-                    type="email"
-                    placeholder="john@doe.com"
-                    name="user_email"
-                    required
-                  /> -->
-                </div>
-                <div class="main-btn-container">
-                  <a class="main-btn main-btn__main" href="/"> Log In </a>
-                </div>
-              </form>
-            </section>
+            <a
+              class="main-btn main-btn__main main-btn--blue"
+              href="{{ loginLink }}"
+            >
+              Log In
+            </a>
           </div>
 
           <div class="main-img-container">
@@ -143,37 +113,10 @@
           </div>
         </div>
       </section>
-      <section class="get-updates">
-        <div class="container">
-          <form action="" class="page-form page-form-updates">
-            <div class="form-fields">
-              <!-- <input
-                class="send-email"
-                type="text"
-                name="name"
-                placeholder="github"
-              />
-              <input
-                class="send-email"
-                type="email"
-                placeholder="email/telegram/linkedin"
-                name="user_email"
-                required
-              /> -->
-            </div>
-            <div class="main-btn-container">
-              <a class="main-btn main-btn__updates" href="/"> Get updates </a>
-            </div>
-          </form>
-        </div>
-      </section>
-      <footer class="page-footer">
-        <div class="container">
-          <div class="contact-linkedin">
-            <a href="/">Occur</a>
-          </div>
-        </div>
-      </footer>
+
+      {{> login-link-section}}
+      <!-- footer -->
+      {{> footer }}
     </div>
     <script type="module" src="/main.js"></script>
   </body>

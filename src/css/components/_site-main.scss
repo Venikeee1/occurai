@@ -7,6 +7,27 @@
   padding-bottom: 40px;
   width: 100%;
   overflow: hidden;
+
+  &--home {
+    background: $introGradient;
+  }
+
+  &--companies {
+    background: radial-gradient(
+      circle at 104%,
+      #a15aad,
+      #ae59bd 30%,
+      #b469c1 65%,
+      #a361af 75%
+    );
+  }
+}
+
+.main-left {
+  @include tabletLarge {
+    width: 50%;
+    align-self: center;
+  }
 }
 
 .mp-container {
@@ -15,11 +36,6 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
-
-    div {
-      align-self: center;
-      width: 50%;
-    }
   }
 }
 
@@ -47,10 +63,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
-    div {
-      align-self: center;
-    }
   }
 }
 
@@ -77,13 +89,9 @@
 }
 
 .main-btn__main {
-  margin: 20px 0 0;
-
-  @include mobile {
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-  }
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
 
   @include tabletLarge {
     max-width: 190px;

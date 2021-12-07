@@ -1,5 +1,6 @@
 import { gsap } from 'gsap';
 
+const animatedWordClass = 'animated-word';
 const animatedCharacterClass = 'animated-character';
 const animatedCharacterContentClass = 'animated-character-content';
 const STAGGER = 0.05;
@@ -26,8 +27,9 @@ const createSplittedText = (words) => {
   return words
     .map((word) => {
       const characters = splitByCharacters(word);
+      const unWrapperWord = wrapCharacters(characters).join('');
 
-      return wrapCharacters(characters).join('');
+      return `<span class="${animatedWordClass}">${unWrapperWord}</span>`;
     })
     .join(' ');
 };

@@ -2,17 +2,10 @@ import { Menu } from './menu';
 
 const header = document.querySelector('.navbar-header');
 const menuToggler = document.querySelector('.navbar-toggle');
-const menu = new Menu('.collapsing-menu');
-let isMenuOpen = false;
+const menu = new Menu('.collapsing-menu', menuToggler);
 
 const toggleMenu = () => {
-  if (isMenuOpen) {
-    menu.close();
-  } else {
-    menu.open();
-  }
-
-  isMenuOpen = !isMenuOpen;
+  menu.toggle();
 };
 
 const addStickyHeader = () => {
